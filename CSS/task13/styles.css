@@ -1,0 +1,25 @@
+.main{
+    width: 320px;
+    height: 50%;
+    margin: 0px auto;
+}
+.first,.fourth{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.third,.second{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.box{
+    width: 70px;
+    height: 50px;
+    border: 1px solid gray;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+}

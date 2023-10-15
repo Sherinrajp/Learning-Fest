@@ -1,0 +1,8 @@
+.main{
+    background: linear-gradient(red,orange,yellow,green,blue,violet,indigo,violet) ;
+    height: 100px;
+}
+h3{
+    color: gray;
+    text-align: center;
+}
