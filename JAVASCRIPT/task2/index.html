@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+        function add()
+        {
+            var a,b,sum;
+            a=parseInt(document.getElementById("first").value);
+            b=parseInt(document.getElementById("second").value);
+            sum=a+b;
+            document.getElementById("answer").value =sum;
+
+
+        }
+    </script>
+    <body>
+        <p>Enter the first number:<input id="first"></p>
+        <p>Enter the second number:<input id="second"></p>
+        <button onclick="add()">add</button>
+
+        <p>the sum is:<input id="answer"></p>
+</body>
+</html>

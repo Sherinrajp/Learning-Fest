@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            body{
+    background-color: white;
+            
+                
+            }
+            .c{
+                width:400px;
+                height:400px;
+                background: rgb(24, 39, 39);
+                position: absolute;
+                left:30%;
+                top:10%;
+                text-align: center;
+                padding:20px 0px 0px 20px;
+                border-radius:40px;
+                color:white;
+            }
+           input{
+            
+           }
+           .label{
+            font-size:20px;
+           }
+        </style>
+    </head>
+<body>
+    <div class ="c">
+        <h2>EMI CALCULATOR</h2>
+    <form>
+    <label class="label">Loan Amount:</label><br>
+    <input type="text" id="loanamount">
+    <br><br>
+    <label class="label" >Interest Rate:</label><br>
+    <input type="text"  id="interestRate" >
+    <br><br>
+    <label class="label">time period (months):</label><br>
+    <input type="text" id="months">
+    <br><br>
+    <button type="button" onclick="calculate()">Calculate EMI</button><br><br>
+    EMI:<h2 id="EMI"></h2>
+    </form>
+    </div>
+    <script>
+        function calculate(){
+            let amount=document.getElementById("loanamount").value;
+            let rate=document.getElementById('interestRate').value;
+           let  months=document.getElementById('months').value;
+            var calculate = (rate/100) / 12;
+             var emi = (amount * calculate * Math.pow(1 + calculate, months)) / (Math.pow(1 + calculate, months) - 1);
+             var result  =document.getElementById("EMI"); 
+             result.innerHTML = emi;
+        }
+        </script>
+</body>
+</html>
